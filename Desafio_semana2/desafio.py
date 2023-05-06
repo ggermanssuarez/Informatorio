@@ -18,13 +18,34 @@ print("La letra1 se repite: ", cantidad_letra1, "\n"
       "La letra3 se repite: ", cantidad_letra3
       )
 
-# consigna 2: cuantas palabras hay en el texto
+print("__________________________")
+# Consigna 2: cuantas palabras hay en el texto
 
 texto_lista = texto.split(' ') #convertir texto en lista, separado por un espacio en blanco
 cantidad_palabras= (len(texto_lista)) # usar len para contar la cantidad de palabras
 print("Hay", cantidad_palabras, "palabras en el texto")
 
+print("__________________________")
 
 # Consigna 3: Cual es la primera letra y cuál es la última. (Indexación) 
-print ("primer letra del texto", texto[0], "\n"
-       "ultima letra: ", texto[-1])
+print ("Primer letra del texto", texto[0], "\n"
+       "Ultima letra: ", texto[-1])
+print("__________________________")
+
+# Consigna 4: Mostrar el texto en orden inverso.
+inverso = texto[len(texto)::-1]
+print("El inverso del texto es: ", inverso)
+print("__________________________")
+
+# Consigna 5: Decir si la palabra "python" aparece en el texto.
+const = "python"
+
+if const in texto_lista: 
+    { 
+        print ("La palabra Python esta en el texto")
+    }
+else: {
+            print ("La palabra Python no esta en el texto")
+
+}
+
