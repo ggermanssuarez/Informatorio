@@ -18,5 +18,13 @@ print("La letra1 se repite: ", cantidad_letra1, "\n"
       "La letra3 se repite: ", cantidad_letra3
       )
 
+# consigna 2: cuantas palabras hay en el texto
+
+texto_lista = texto.split(' ') #convertir texto en lista, separado por un espacio en blanco
+cantidad_palabras= (len(texto_lista)) # usar len para contar la cantidad de palabras
+print("Hay", cantidad_palabras, "palabras en el texto")
 
 
+# Consigna 3: Cual es la primera letra y cuál es la última. (Indexación) 
+print ("primer letra del texto", texto[0], "\n"
+       "ultima letra: ", texto[-1])
